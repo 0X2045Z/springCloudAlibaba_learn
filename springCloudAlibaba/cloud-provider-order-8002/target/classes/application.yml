@@ -1,0 +1,15 @@
+# 端口号
+server:
+  port: 8002
+# 服务名称
+spring:
+  application:
+    name: cloud-provider-order-8002
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 配置nacos地址
+
+# 消费者去访问的微服务的名称（注册进nacos的微服务提供者）
+service-url:
+  nacos-user-service: http://cloud-provider-payment-8001
