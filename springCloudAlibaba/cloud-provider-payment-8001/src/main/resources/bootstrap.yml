@@ -1,0 +1,16 @@
+# 端口号
+server:
+  port: 8001
+# 服务名称
+spring:
+  application:
+    name: cloud-provider-payment-8001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 配置nacos地址
+      config:
+        server-addr: localhost:8848 # 配置nacos地址
+        file-extension: yaml
+        group: DEFAULT_GROUP
+#        namespace: e67ebc63-ccb9-4779-8bdd-f4d5f581b0f7
